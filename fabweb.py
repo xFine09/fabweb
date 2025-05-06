@@ -1,6 +1,6 @@
 import sys
 class fab:
-    '''Clase para la FAB'''
+    '''Clase para FAB'''
     def __init__ (self):
         self.periodos={}
         self.equipos={}
