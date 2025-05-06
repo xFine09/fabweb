@@ -12,8 +12,8 @@ Este es un proyecto simple desarrollado con **Flask** que permite visualizar el 
 
 ## 🛠️ Tecnologías utilizadas
 
-- **Backend:** Python 3, Flask
-- **Frontend:** HTML5, Bootstrap, Jinja2
+- [**Backend:**](app.py) Python 3, Flask
+- [**Frontend:**](FABWEB/templates) HTML5, Bootstrap, Jinja2
 
 ## 📷 Vista previa
 
