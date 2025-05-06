@@ -1,0 +1,69 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f4f8;
+    color: #2c3e50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 1rem;
+  }
+  
+  form {
+    background-color: white;
+    padding: 2rem 3rem;
+    border-radius: 16px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  h1 {
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    color: #34495e;
+  }
+  
+  select {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-bottom: 1.5rem;
+    background-color: #fafafa;
+  }
+  
+  button {
+    background-color: #3498db;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #2a80ba;
+  }
+  
+  @media (max-width: 600px) {
+    form {
+      padding: 1.5rem;
+    }
+  
+    h1 {
+      font-size: 1.5rem;
+    }
+  }
+  

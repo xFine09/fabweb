@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<title>Archivos para subir</title>
+<meta charset="utf-8" />
+<link rel = "stylesheet" href="{{url_for('static', filename = 'estilo_subida.css')}}">
+</head>
+<body>
+<h1>Selecciona un archivo</h1>
+<form method="POST" action="/estadisticas">
+<select name="filename">
+{% for file in files %}
+<option value="{{ file }}">{{ file }}</option>
+{% endfor %}
+</select>
+<button type="submit">Mostrar estadísticas</button>
+</form>
+</body>
+</html>

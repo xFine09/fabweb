@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<head>
+    <title>Seleccionar archivo de partido</title>
+    <link rel = "stylesheet" href="{{url_for('static', filename = 'selector.css')}}">
+
+</head>
+<body>
+    <h1>Seleccionar archivo CSV</h1>
+    
+    {% if error %}
+        <div class="error">{{ error }}</div>
+    {% endif %}
+    
+    <form method="POST">
+        <div class="selector">
+            <select name="archivo" required>
+                <option value="">-- Seleccione un archivo --</option>
+                {% for archivo in archivos %}
+                <option value="{{ archivo }}">{{ archivo }}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <button type="submit">Procesar</button>
+    </form>
+</body>
+</html>

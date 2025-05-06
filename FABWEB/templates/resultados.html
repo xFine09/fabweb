@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <title>Resultados - {{ archivo }}</title>
+
+</head>
+<body>
+    <h1>Resultados del partido</h1>
+    <h3>Archivo: {{ archivo }}</h3>
+    
+    {% for cuarto, parcial in parciales.items() %}
+    <div class="cuarto">
+        <h4>Cuarto {{ cuarto }}</h4>
+        <ul>
+            {% for equipo, puntos in parcial.items() %}
+            <li>{{ teams[equipo] }}: {{ puntos }} puntos</li>
+            {% endfor %}
+        </ul>
+    </div>
+    {% endfor %}
+    
+    <div class="volver">
+        <a href="/">Seleccionar otro archivo</a>
+    </div>
+</body>
+</html>

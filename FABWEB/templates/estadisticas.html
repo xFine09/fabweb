@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<title>Tabla de partido</title>
+<meta charset="utf-8" />
+<link rel = "stylesheet" href="{{url_for('static', filename = 'estilo.css')}}">
+</head>
+ 
+<body>
+    <header>
+       <h1>Esta es mi prueba</h1>
+       <p>Ale Serrano</p>
+    </header>
+    <h2>Estadísticas de:{{filename}}</h2>
+    {% for cuarto in cuartos %}
+      <p>{{cuarto}}º Cuarto.&emsp;
+      {% for equipo in teams %}
+        {{teams[equipo]}}:{{cuartos[cuarto][equipo]}}.&emsp;
+      {% endfor %}
+      </p>
+      <hr>
+    {% endfor %}
+</body>
+</html>
